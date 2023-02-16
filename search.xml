@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>使用 gh-pages 提交文件夹至任意分支</title>
+      <link href="/archives/f127d6f9.html"/>
+      <url>/archives/f127d6f9.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="使用-gh-pages-提交文件夹至任意分支"><a href="#使用-gh-pages-提交文件夹至任意分支" class="headerlink" title="使用 gh-pages 提交文件夹至任意分支"></a>使用 gh-pages 提交文件夹至任意分支</h2><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>&emsp;&emsp;在使用 github pages 服务展示页面时，会进行构建页面分支的选择，在我们使用 vue 构建项目进行 npm run build 操作后，会出现 dist 文件夹，如何方便快捷的将 dist 文件夹提交到另外的分支进行页面构建是一个问题，本文将会介绍一个非常好用的包来进行上述操作。</p><h4 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h4><p>&emsp;&emsp;gh-pages 将文件发布到 GitHub 上的一个 gh-pages 分支（或其他任何地方的任何其他分支）。</p><div class="tag link"><a class="link-card" title="文档" href="https://www.npmjs.com/package/gh-pages"><div class="left"><img src="https://static.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png"/></div><div class="right"><p class="text">文档</p><p class="url">https://www.npmjs.com/package/gh-pages</p></div></a></div><h2 id="gh-pages-安装和配置"><a href="#gh-pages-安装和配置" class="headerlink" title="gh-pages 安装和配置"></a>gh-pages 安装和配置</h2><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>&emsp;&emsp;在终端中进行安装</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install gh-pages --save-dev</span><br></pre></td></tr></table></figure><h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p>&emsp;&emsp;在文档中查看基础使用方法。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ghpages.<span class="title function_">publish</span>(dir, callback);</span><br><span class="line"><span class="comment">// or...</span></span><br><span class="line">ghpages.<span class="title function_">publish</span>(dir, options, callback);</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;现在我们编写将 dist 文件夹提交至 gh-pages 分支下的配置，打开 vue.config.js 填写进行如下配置。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// vue.config.js</span></span><br><span class="line"><span class="keyword">const</span> ghpages = <span class="built_in">require</span>(<span class="string">&quot;gh-pages&quot;</span>);</span><br><span class="line">ghpages.<span class="title function_">publish</span>(<span class="string">&quot;dist&quot;</span>, <span class="keyword">function</span> (<span class="params">err</span>) &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(err);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>&emsp;&emsp;打开 package.json 在 scripts 项中添加如下配置,-d 后为要提交的目录，本文以 dist 文件夹为例。</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// package.json</span></span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;deploy&quot;</span><span class="punctuation">:</span> <span class="string">&quot;gh-pages -d dist&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure><h4 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h4><p>&emsp;&emsp;在安装和配置完成后，我们若要进行提交操作，可以运行 npm run deploy 运行。</p><p><img src="https://pic.imgdb.cn/item/63e5f03b4757feff33e9215d.jpg" alt="提交成功"></p><p>&emsp;&emsp;运行完成后出现 Published 字样说明提交成功，在仓库的 gh-pages 分支下可以看到提交信息。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件工具分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具分享 </tag>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Office365免费永久激活教程</title>
+      <link href="/archives/61a34e9.html"/>
+      <url>/archives/61a34e9.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="使用-Office-Tool-Plus-一键部署激活-Office"><a href="#使用-Office-Tool-Plus-一键部署激活-Office" class="headerlink" title="使用 Office Tool Plus 一键部署激活 Office"></a>使用 Office Tool Plus 一键部署激活 Office</h2><h4 id="工具下载"><a href="#工具下载" class="headerlink" title="工具下载"></a>工具下载</h4><div class="tag link"><a class="link-card" title="Office Tool Plus下载地址" href="https://otp.landian.vip/zh-cn/"><div class="left"><img src="https://otp.landian.vip/static/images/logo.ico"/></div><div class="right"><p class="text">Office Tool Plus下载地址</p><p class="url">https://otp.landian.vip/zh-cn/</p></div></a></div><h4 id="在官网中点击立即下载。"><a href="#在官网中点击立即下载。" class="headerlink" title="在官网中点击立即下载。"></a>在官网中点击立即下载。</h4><p><img src="https://pic.imgdb.cn/item/63d72653face21e9ef27221b.jpg" alt="下载"></p><h4 id="选择带框架的版本下载并进行解压。"><a href="#选择带框架的版本下载并进行解压。" class="headerlink" title="选择带框架的版本下载并进行解压。"></a>选择带框架的版本下载并进行解压。</h4><p><img src="https://pic.imgdb.cn/item/63d726bcface21e9ef27ceb9.jpg" alt="选择版本"></p><h2 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h2><h4 id="进入部署页面"><a href="#进入部署页面" class="headerlink" title="进入部署页面"></a>进入部署页面</h4><p><img src="https://pic.imgdb.cn/item/63d727ccface21e9ef29a03c.jpg" alt="部署页面"></p><h4 id="选择部署版本"><a href="#选择部署版本" class="headerlink" title="选择部署版本"></a>选择部署版本</h4><p>这里选择 Microsoft 365 企业应用版。</p><p><img src="https://pic.imgdb.cn/item/63d72824face21e9ef2a39ee.jpg" alt="版本选择"></p><h4 id="部署参数选择"><a href="#部署参数选择" class="headerlink" title="部署参数选择"></a>部署参数选择</h4><p>&emsp;&emsp;在下面和右面的参数选择面板选择安装参数，选择安装的 365 中包括的程序，安装版本及语言包。</p><div class="tip info"><p>右侧参数选择中的通道使用默认的“当前通道”会安装当前最新稳定版本，使用“测试通道”会安装最新测试版，通道的选择按照个人需求选取即可。</p></div><p><img src="https://pic.imgdb.cn/item/63d728c5face21e9ef2b4f61.jpg" alt="部署参数"><br><img src="https://pic.imgdb.cn/item/63d7298aface21e9ef2c9d4d.jpg" alt="语言选择"></p><h4 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h4><p>&emsp;&emsp;准备就绪后，点击右上角的开始部署，并等待部署的完成。</p><p><img src="https://pic.imgdb.cn/item/63d72a0eface21e9ef2da2c8.jpg" alt="开始部署"></p><h2 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h2><h4 id="安装对应许可证"><a href="#安装对应许可证" class="headerlink" title="安装对应许可证"></a>安装对应许可证</h4><div class="tip info"><p>如果安装了其他 365 中不包含的额外软件，在许可证中选择对应的批量许可进行安装即可。</p></div><p><img src="https://pic.imgdb.cn/item/63d72c0aface21e9ef31bc70.jpg" alt="许可证选择与安装"></p><h4 id="KMS-激活管理"><a href="#KMS-激活管理" class="headerlink" title="KMS 激活管理"></a>KMS 激活管理</h4><p>&emsp;&emsp;KMS 的主机与端口号从下面的网址中进行选择，在填入网址和端口号后保存，点击右上角的激活按钮进行激活。</p><div class="tag link"><a class="link-card" title="KMS服务器地址选择" href="https://www.kms.pub/rank.html"><div class="left"><img src="https://www.kms.pub/favicon.ico"/></div><div class="right"><p class="text">KMS服务器地址选择</p><p class="url">https://www.kms.pub/rank.html</p></div></a></div><p>&emsp;&emsp;如果点击保存后没有自动进行激活操作，手动点击右上角的激活按钮。</p><p><img src="https://pic.imgdb.cn/item/63d72fdbface21e9ef399ca9.jpg" alt="KMS激活"></p><p>&emsp;&emsp;打开任意 Office 软件点击左下角用户查看激活信息，如下图为激活成功。</p><p><img src="https://pic.imgdb.cn/item/63d73076face21e9ef3acc04.jpg" alt="激活完成"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件工具分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 白嫖分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>谷歌浏览器翻译功能恢复</title>
+      <link href="/archives/d4b642ec.html"/>
+      <url>/archives/d4b642ec.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="谷歌浏览器翻译功能恢复工具"><a href="#谷歌浏览器翻译功能恢复工具" class="headerlink" title="谷歌浏览器翻译功能恢复工具"></a>谷歌浏览器翻译功能恢复工具</h2><h4 id="GoogleTranslateIpCheck"><a href="#GoogleTranslateIpCheck" class="headerlink" title="GoogleTranslateIpCheck"></a>GoogleTranslateIpCheck</h4><p>&emsp;&emsp;修复谷歌浏览器翻译功能无法使用的问题</p><div class="tag link"><a class="link-card" title="工具源仓库地址" href="https://github.com/Ponderfly/GoogleTranslateIpCheck"><div class="left"><img src="https://pic.imgdb.cn/item/63a4493a08b6830163d8230c.png"/></div><div class="right"><p class="text">工具源仓库地址</p><p class="url">https://github.com/Ponderfly/GoogleTranslateIpCheck</p></div></a></div><div class="tag link"><a class="link-card" title="工具Win x64版本下载" href="https://wwvv.lanzout.com/iciNG0m46qfe"><div class="left"><img src="https://api.uomg.com/api/get.favicon?url=https://wwvv.lanzout.com/iOi4B0j7dizi"/></div><div class="right"><p class="text">工具Win x64版本下载</p><p class="url">https://wwvv.lanzout.com/iciNG0m46qfe</p></div></a></div><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h4 id="1-下载工具压缩包后进行解压。"><a href="#1-下载工具压缩包后进行解压。" class="headerlink" title="1.下载工具压缩包后进行解压。"></a>1.下载工具压缩包后进行解压。</h4><h4 id="2-右键以管理员身份运行-GoogleTranslateIpCheck-exe。"><a href="#2-右键以管理员身份运行-GoogleTranslateIpCheck-exe。" class="headerlink" title="2.右键以管理员身份运行 GoogleTranslateIpCheck.exe。"></a>2.右键以管理员身份运行 GoogleTranslateIpCheck.exe。</h4><h4 id="3-运行到出现提示“是否设置到-Host-文件”时，按“Y”键进行设置。"><a href="#3-运行到出现提示“是否设置到-Host-文件”时，按“Y”键进行设置。" class="headerlink" title="3.运行到出现提示“是否设置到 Host 文件”时，按“Y”键进行设置。"></a>3.运行到出现提示“是否设置到 Host 文件”时，按“Y”键进行设置。</h4><p><img src="https://pic.imgdb.cn/item/63a447c308b6830163d5e619.png" alt="运行提示"></p><h4 id="4-按“Y”键后出现以下提示说明设置完成，完成后即可关闭工具。"><a href="#4-按“Y”键后出现以下提示说明设置完成，完成后即可关闭工具。" class="headerlink" title="4.按“Y”键后出现以下提示说明设置完成，完成后即可关闭工具。"></a>4.按“Y”键后出现以下提示说明设置完成，完成后即可关闭工具。</h4><p><img src="https://pic.imgdb.cn/item/63a447c308b6830163d5e5eb.png" alt="运行结果"></p><p>&emsp;&emsp;至此，谷歌浏览器自带的翻译功能即可正常使用。</p><h2 id="新版本功能"><a href="#新版本功能" class="headerlink" title="新版本功能"></a>新版本功能</h2><p>&emsp;&emsp;新版本的工具支持 IPV6 地址搜索，如果您的电脑可以使用 IPV6，可以优先尝试以下方法。</p><h4 id="1-创建工具的快捷方式。"><a href="#1-创建工具的快捷方式。" class="headerlink" title="1.创建工具的快捷方式。"></a>1.创建工具的快捷方式。</h4><p><img src="https://pic.imgdb.cn/item/63d7229fface21e9ef213442.jpg" alt="创建快捷方式"></p><h4 id="2-在快捷方式的属性页面目标后添加”空格-6”。"><a href="#2-在快捷方式的属性页面目标后添加”空格-6”。" class="headerlink" title="2.在快捷方式的属性页面目标后添加”空格-6”。"></a>2.在快捷方式的属性页面目标后添加”空格-6”。</h4><p><img src="https://pic.imgdb.cn/item/63d7239aface21e9ef22d2e5.jpg" alt="创建快捷方式"></p><h4 id="3-右键以管理员身份运行快捷方式，后续操作与-IPV4-方法一致。"><a href="#3-右键以管理员身份运行快捷方式，后续操作与-IPV4-方法一致。" class="headerlink" title="3.右键以管理员身份运行快捷方式，后续操作与 IPV4 方法一致。"></a>3.右键以管理员身份运行快捷方式，后续操作与 IPV4 方法一致。</h4>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件工具分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Vue 使用 gzip 压缩</title>
+      <link href="/archives/c6c8dc0b.html"/>
+      <url>/archives/c6c8dc0b.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Vue-使用-gzip-压缩"><a href="#Vue-使用-gzip-压缩" class="headerlink" title="Vue 使用 gzip 压缩"></a>Vue 使用 gzip 压缩</h2><p>&emsp;&emsp;gizp 压缩是一种 http 请求优化方式，通过减少文件体积来提高加载速度。html、js、css 文件甚至 json 数据都可以用它压缩，可以减小 60%以上的体积。</p><p>&emsp;&emsp;webpack 在打包时可以借助 compression webpack plugin 实现 gzip 压缩，首先需要安装该插件：</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install compression-webpack-plugin --save-dev</span><br></pre></td></tr></table></figure><h4 id="vue-config-js-配置"><a href="#vue-config-js-配置" class="headerlink" title="vue.config.js 配置"></a>vue.config.js 配置</h4><p>&emsp;&emsp;在 vue.config.js 中按照如下方式进行配置：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; defineConfig &#125; = <span class="built_in">require</span>(<span class="string">&quot;@vue/cli-service&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> <span class="title class_">CompressionPlugin</span> = <span class="built_in">require</span>(<span class="string">&quot;compression-webpack-plugin&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = <span class="title function_">defineConfig</span>(&#123;</span><br><span class="line">  <span class="attr">productionSourceMap</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="attr">transpileDependencies</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">publicPath</span>: <span class="string">&quot;./&quot;</span>,</span><br><span class="line">  <span class="attr">lintOnSave</span>: <span class="literal">false</span>,</span><br><span class="line"></span><br><span class="line">  <span class="attr">chainWebpack</span>: <span class="function">(<span class="params">config</span>) =&gt;</span> &#123;</span><br><span class="line">    config.<span class="property">optimization</span>.<span class="title function_">minimize</span>(<span class="literal">true</span>);</span><br><span class="line">    config.<span class="property">optimization</span>.<span class="title function_">splitChunks</span>(&#123;</span><br><span class="line">      <span class="attr">chunks</span>: <span class="string">&quot;all&quot;</span>,</span><br><span class="line">    &#125;);</span><br><span class="line">    config.<span class="title function_">plugin</span>(<span class="string">&quot;compressionPlugin&quot;</span>).<span class="title function_">use</span>(</span><br><span class="line">      <span class="keyword">new</span> <span class="title class_">CompressionPlugin</span>(&#123;</span><br><span class="line">        <span class="comment">// test: /\.js$|\.html$|.\css$|\.otf$|\.ttf/,</span></span><br><span class="line">        <span class="attr">test</span>: <span class="regexp">/\.(js|css|html|ttf|woff|woff2)$/</span>,</span><br><span class="line">        <span class="attr">threshold</span>: <span class="number">10240</span>, <span class="comment">// 只有大小大于该值的资源会被处理 10240</span></span><br><span class="line">        <span class="attr">deleteOriginalAssets</span>: <span class="literal">false</span>, <span class="comment">// 删除原文件</span></span><br><span class="line">      &#125;)</span><br><span class="line">    );</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><h4 id="压缩结果"><a href="#压缩结果" class="headerlink" title="压缩结果"></a>压缩结果</h4><p>&emsp;&emsp;运行 npm run build 后看到打包压缩后的文件大小。<br><img src="https://pic.imgdb.cn/item/639dafbfb1fccdcd36890048.png" alt="压缩后大小对比"><br>&emsp;&emsp;程序上传至代码托管平台后，在浏览器进行文件查看，在控制台网络部分看到文件已经使用了 gzip 进行压缩传输。<br><img src="https://pic.imgdb.cn/item/639dafbfb1fccdcd3689004f.png" alt="代码压缩查看"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CMIP6 nc文件按时间、经纬度分割</title>
+      <link href="/archives/eb5149de.html"/>
+      <url>/archives/eb5149de.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="CMIP6-nc-文件按时间、经纬度分割"><a href="#CMIP6-nc-文件按时间、经纬度分割" class="headerlink" title="CMIP6 nc 文件按时间、经纬度分割"></a>CMIP6 nc 文件按时间、经纬度分割</h2><h4 id="导入相关包"><a href="#导入相关包" class="headerlink" title="导入相关包"></a>导入相关包</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> xarray <span class="keyword">as</span> xr</span><br></pre></td></tr></table></figure><h4 id="分割"><a href="#分割" class="headerlink" title="分割"></a>分割</h4><p>&emsp;&emsp;可以单独进行按时间分割和按经纬度分割。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">nc = xr.open_dataset(</span><br><span class="line">    <span class="string">r&#x27;D:\WorkSpace\Python_WorkSpace\CMIP_Test\Data\pr_day_BCC-CSM2-MR_ssp126_r1i1p1f1_gn_20150101-20391231.nc&#x27;</span>)</span><br><span class="line">v = nc[<span class="string">&#x27;pr&#x27;</span>]</span><br><span class="line"><span class="built_in">print</span>(v)</span><br><span class="line"><span class="keyword">for</span> year <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2015</span>, <span class="number">2040</span>):</span><br><span class="line">    time = v.loc[<span class="built_in">str</span>(year) + <span class="string">&#x27;-01-01 00:00:00&#x27;</span>:<span class="built_in">str</span>(year + <span class="number">1</span>) + <span class="string">&#x27;-01-01 00:00:00&#x27;</span>]</span><br><span class="line">    latlon = time.loc[:, <span class="number">15</span>:<span class="number">60</span>, <span class="number">70</span>:<span class="number">140</span>]  <span class="comment"># 最小纬度:最大纬度,最小经度:最大经度</span></span><br><span class="line">    ds = xr.Dataset(&#123;<span class="string">&#x27;pr&#x27;</span>: latlon&#125;)</span><br><span class="line">    <span class="comment"># ds = xr.Dataset(&#123;&quot;pr&quot;: time&#125;)</span></span><br><span class="line">    ds.to_netcdf(<span class="string">&#x27;D:\WorkSpace\Python_WorkSpace\CMIP_Test\CMIP6\pr_China\pr_China_&#x27;</span> + <span class="built_in">str</span>(year) + <span class="string">&#x27;.nc&#x27;</span>)  <span class="comment"># 输出路径</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">str</span>(year) + <span class="string">&#x27;success&#x27;</span>)</span><br></pre></td></tr></table></figure><div class="tag link"><a class="link-card" title="参考链接" href="https://blog.csdn.net/asdtf123/article/details/122141105"><div class="left"><img src="https://api.uomg.com/api/get.favicon?url=https://blog.csdn.net/asdtf123/article/details/122141105"/></div><div class="right"><p class="text">参考链接</p><p class="url">https://blog.csdn.net/asdtf123/article/details/122141105</p></div></a></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> CMIP教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CMIP </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CMIP6 nc文件降尺度</title>
+      <link href="/archives/caccdf60.html"/>
+      <url>/archives/caccdf60.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="CMIP6-nc-文件降尺度"><a href="#CMIP6-nc-文件降尺度" class="headerlink" title="CMIP6 nc 文件降尺度"></a>CMIP6 nc 文件降尺度</h2><h4 id="导入相关包"><a href="#导入相关包" class="headerlink" title="导入相关包"></a>导入相关包</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> xarray <span class="keyword">as</span> xr</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></table></figure><h4 id="降尺度"><a href="#降尺度" class="headerlink" title="降尺度"></a>降尺度</h4><p>&emsp;&emsp;本代码以经纬度分割后的数据为例将 nc 文件进行线性插值降尺度到 0.5*0.5。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">new_lon = np.arange(<span class="number">70</span>, <span class="number">140</span>, <span class="number">0.5</span>)  <span class="comment"># 经度范围及目标尺度</span></span><br><span class="line">new_lat = np.arange(<span class="number">15</span>, <span class="number">60</span>, <span class="number">0.5</span>)  <span class="comment"># 纬度范围及目标尺度</span></span><br><span class="line"><span class="comment"># 多文件处理可以采用循环</span></span><br><span class="line"><span class="keyword">for</span> year <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2015</span>, <span class="number">2040</span>):</span><br><span class="line">    <span class="comment"># 打开文件</span></span><br><span class="line">    ori_data = xr.open_dataset(<span class="string">&#x27;CMIP6/pr_China/pr_China_&#x27;</span> + <span class="built_in">str</span>(year) + <span class="string">&#x27;.nc&#x27;</span>)</span><br><span class="line">    new_data = ori_data.interp(lat=new_lat, lon=new_lon)  <span class="comment"># 线性插值</span></span><br><span class="line">    <span class="comment"># 输出路径</span></span><br><span class="line">    new_data.to_netcdf(<span class="string">&#x27;CMIP6_0.5/pr_China_0.5/pr_China_0.5_&#x27;</span> + <span class="built_in">str</span>(year) + <span class="string">&#x27;.nc&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">str</span>(year) + <span class="string">&#x27;success&#x27;</span>)</span><br></pre></td></tr></table></figure><div class="tip warning"><p>CMIP6 中的经度为(0,360)，其中(0,180)为东经,(180,360)为西经，所以可以很方便地插值。但是有的 nc 文件经度为(-180,180),其中(-180,0)为西经,(0,-180)为东经，因此不能直接插值，需要重写一下经度，并在变量层重新做映射，再插值。</p></div><div class="tip warning"><p>如果要对多个 nc 文件做插值，一般用到循环，需在每次转存结束后释放内存，防止内存溢出。</p></div><div class="tag link"><a class="link-card" title="参考链接" href="https://zhuanlan.zhihu.com/p/381676029"><div class="left"><img src="https://api.uomg.com/api/get.favicon?url=https://zhuanlan.zhihu.com/p/381676029"/></div><div class="right"><p class="text">参考链接</p><p class="url">https://zhuanlan.zhihu.com/p/381676029</p></div></a></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> CMIP教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CMIP </tag>
+            
+            <tag> Python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CMIP6 模型、实验、变量表格下载</title>
+      <link href="/archives/1620af90.html"/>
+      <url>/archives/1620af90.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="CMIP6-模型、实验、变量表格下载"><a href="#CMIP6-模型、实验、变量表格下载" class="headerlink" title="CMIP6 模型、实验、变量表格下载"></a>CMIP6 模型、实验、变量表格下载</h2><h4 id="模型、实验、变量表格"><a href="#模型、实验、变量表格" class="headerlink" title="模型、实验、变量表格"></a>模型、实验、变量表格</h4><p><img src="https://pic.imgdb.cn/item/6318597416f2c2beb1ee27c6.png" alt="CMIP6模型"></p><p><img src="https://pic.imgdb.cn/item/6318597416f2c2beb1ee27bd.png" alt="CMIP6实验"></p><p><img src="https://pic.imgdb.cn/item/6318597416f2c2beb1ee27c1.png" alt="CMIP6变量"></p><h4 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h4><div class="tag link"><a class="link-card" title="模型、实验、变量表格 提取码3exm" href="https://wwp.lanzout.com/b03p9qgza"><div class="left"><img src="https://api.uomg.com/api/get.favicon?url=https://wwp.lanzout.com/b03p9qgza"/></div><div class="right"><p class="text">模型、实验、变量表格 提取码3exm</p><p class="url">https://wwp.lanzout.com/b03p9qgza</p></div></a></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> CMIP教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CMIP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>acccmip6 安装及相关操作</title>
+      <link href="/archives/f535b820.html"/>
+      <url>/archives/f535b820.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="acccmip6-安装及相关操作"><a href="#acccmip6-安装及相关操作" class="headerlink" title="acccmip6 安装及相关操作"></a>acccmip6 安装及相关操作</h2><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install acccmip6</span><br></pre></td></tr></table></figure><h4 id="一般用法"><a href="#一般用法" class="headerlink" title="一般用法"></a>一般用法</h4><ul><li>帮助。<code>acccmip6 -h</code></li><li>搜索数据库。<code>acccmip6 -o S</code></li><li>从数据库下载。<code>acccmip6 -o D</code></li></ul><h4 id="必需的参数"><a href="#必需的参数" class="headerlink" title="必需的参数"></a>必需的参数</h4><ul><li><code>-o</code>：采用输出类型。“S”用于搜索数据库或“D”用于从数据库下载。使用“M”来使用 CMIP6DB 模块。</li></ul><h4 id="可选参数"><a href="#可选参数" class="headerlink" title="可选参数"></a>可选参数</h4><ul><li><code>-m</code>: 型号名称（允许多个逗号分隔的名称）</li><li><code>-e</code>: 实验名称</li><li><code>-f</code>: CMIP6 输出频率（例如：mon, day 等）</li><li><code>-v</code>: 变量名</li><li><code>-r</code>: 领域名称（例如 atmos，ocean 等）</li><li><code>-rlzn</code>：选择一个指定的实现</li><li><code>-c</code>：“yes”在搜索或下载时使用检查器。这有助于找出搜索项当前是否可用。如果没有，它将提供与您的搜索结果非常匹配的建议。</li><li><code>-desc</code>: ‘yes’ 获取所搜索到的实验的描述</li><li><code>-dir</code>: 下载目录</li><li><code>-skip</code>：从您的下载中跳过任何项目（model/experiment/realizations）</li><li><code>-time</code>: ‘yes’ 打印出所有可用的时间段</li><li><code>-yr</code>：选择一个时间段（年数）的数据</li></ul><div class="tag link"><a class="link-card" title="具体变量名和网页搜索" href="https://esgf-node.llnl.gov/search/cmip6/"><div class="left"><img src="https://api.uomg.com/api/get.favicon?url=https://esgf-node.llnl.gov/search/cmip6/"/></div><div class="right"><p class="text">具体变量名和网页搜索</p><p class="url">https://esgf-node.llnl.gov/search/cmip6/</p></div></a></div><h4 id="示例用法"><a href="#示例用法" class="headerlink" title="示例用法"></a>示例用法</h4><h5 id="1-搜索数据"><a href="#1-搜索数据" class="headerlink" title="1.搜索数据"></a>1.搜索数据</h5><p>-m 模型名称 -v 变量名称 -f 频率 -r 领域</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">acccmip6 -o S -m MIROC6 -e ssp245 -v zg -f mon -r atmos</span><br></pre></td></tr></table></figure><p>-c : ‘yes’在搜索或下载时使用检查器。这有助于查明搜索项当前是否可用。如果没有，它将提供与你的搜索结果非常匹配的建议。</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">acccmip6 -o S -m IPSL -c yes</span><br></pre></td></tr></table></figure><p>-desc : ‘yes’来获取所搜索的实验的描述</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">acccmip6 -o S -e hist-piNTCF,hist-piAer -v vas -m MIROC6 -desc yes</span><br></pre></td></tr></table></figure><p>-time : ‘yes’打印出所有可用的时间段</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">acccmip6 -o S -v pr -e historical -f mon -m NorESM2-LM -time yes</span><br></pre></td></tr></table></figure><p>-yr : 选择时间段(年数)的数据</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">acccmip6 -o S -v pr -e historical -f mon -m NorESM2-LM -yr -5 -time yes</span><br></pre></td></tr></table></figure><h5 id="2-下载数据"><a href="#2-下载数据" class="headerlink" title="2.下载数据"></a>2.下载数据</h5><p>-rlzn : 选择指定的实现</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">acccmip6 -o D -e hist-piNTCF -v vas -m MIROC6 -dir /mnt/d/Work/acccmip6_download/download_here -rlzn 2</span><br></pre></td></tr></table></figure><p>-dir : 下载目录</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">acccmip6 -o D -e hist-piNTCF -v vas -m MIROC6 -dir /mnt/d/Work/acccmip6_download/download_here</span><br></pre></td></tr></table></figure><p>-skip : 跳过你下载的任何项目(model/experiment/realizations)</p><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">acccmip6 -o D -e ssp245-aer,ssp245,hist-aer -MIROC6,CanESM5 -f mon -r atmos -skip hist-aer,ua,va,zg</span><br></pre></td></tr></table></figure><h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><div class="tag link"><a class="link-card" title="" href="https://acccmip6.readthedocs.io/en/latest/guide/quickstart.html"><div class="left"><img src="https://api.uomg.com/api/get.favicon?url=https://acccmip6.readthedocs.io/en/latest/guide/quickstart.html"/></div><div class="right"><p class="text"></p><p class="url">https://acccmip6.readthedocs.io/en/latest/guide/quickstart.html</p></div></a></div><div class="tag link"><a class="link-card" title="" href="https://cloud.tencent.com/developer/article/1744076"><div class="left"><img src="https://api.uomg.com/api/get.favicon?url=https://cloud.tencent.com/developer/article/1744076"/></div><div class="right"><p class="text"></p><p class="url">https://cloud.tencent.com/developer/article/1744076</p></div></a></div><div class="tag link"><a class="link-card" title="" href="https://esgf-node.llnl.gov/search/cmip6/"><div class="left"><img src="https://api.uomg.com/api/get.favicon?url=https://esgf-node.llnl.gov/search/cmip6/"/></div><div class="right"><p class="text"></p><p class="url">https://esgf-node.llnl.gov/search/cmip6/</p></div></a></div><div class="tag link"><a class="link-card" title="" href="https://www.bilibili.com/read/cv11578177/"><div class="left"><img src="https://api.uomg.com/api/get.favicon?url=https://www.bilibili.com/read/cv11578177/"/></div><div class="right"><p class="text"></p><p class="url">https://www.bilibili.com/read/cv11578177/</p></div></a></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> CMIP教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CMIP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
