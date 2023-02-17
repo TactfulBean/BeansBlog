@@ -2998,7 +2998,7 @@ h1.page-title + .tag-cloud-list {
   }
 }
 #aside-content #card-toc .toc-content > * {
-  margin: 0 20px !important;
+  margin: 0 20px;
 }
 #aside-content #card-toc .toc-content > * > .toc-item > .toc-child {
   margin-left: 10px;
@@ -6196,6 +6196,62 @@ hr {
   height: 130px;
   width: 100%;
   background-repeat: no-repeat;
+}
+/* 目录宽度 */
+.toc-content {
+  width: 100% !important;
+  margin: 0 !important;
+}
+.toc {
+  margin: 0 20px 0 0 !important;
+}
+/* 友联样式 */
+.flexcard-flink-list > a {
+  border: var(--border-style) !important;
+}
+/* 时间轴样式 */
+.article-sort-item.year {
+  width: 100%;
+  margin: 0.5rem 0;
+  color: #ffffff;
+  background: #318efd !important;
+}
+.article-sort-item {
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0.3rem 0;
+  background: #f7f9fe;
+}
+.article-sort-item-time {
+  float: right;
+}
+/* 版权信息 */
+#post .post-copyright::before {
+  position: absolute;
+  right: 22px;
+  top: -77px;
+  content: "\f25e";
+  font-size: 180px;
+  font-family: "Font Awesome 5 Brands";
+  color: #363636;
+  opacity: 0.4;
+  filter: blur(7px);
+}
+.layout #post .post-copyright {
+  border: var(--border-style);
+  border-radius: 15px;
+  overflow: hidden;
+}
+/* 代码块 */
+#article-container figure.highlight {
+  border-radius: 10px;
+}
+/* 下一篇 */
+#pagination.pagination-post {
+  border-radius: 10px;
+}
+.relatedPosts > .relatedPosts-list > div {
+  border-radius: 10px;
 }
 
 #nav-right {
