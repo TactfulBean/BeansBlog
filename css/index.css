@@ -1357,14 +1357,14 @@ canvas:not(#ribbon-canvas),
   --white: #fff;
   --text-highlight-color: #1f2d3d;
   --blockquote-color: #6a737d;
-  --blockquote-bg: rgba(73,177,245,0.1);
+  --blockquote-bg: rgba(0,196,182,0.1);
   --reward-pop: #f5f5f5;
   --toc-link-color: #666261;
   --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
   --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
   --pseudo-hover: #ff7242;
   --headline-presudo: #a0a0a0;
-  --scrollbar-color: #49b1f5;
+  --scrollbar-color: #00c4b6;
   --default-bg-color: #00c4b6;
 }
 body {
@@ -1500,7 +1500,7 @@ img:not([src]) {
 blockquote {
   margin: 0 0 20px;
   padding: 12px 15px;
-  border-left: 3px solid #49b1f5;
+  border-left: 3px solid #00c4b6;
   background-color: var(--blockquote-bg);
   color: var(--blockquote-color);
 }
@@ -5887,11 +5887,17 @@ blockquote.pullquote.right {
   border-radius: 25px;
   border: var(--border-style);
 }
+#recent-posts > .recent-post-item:hover {
+  border: 1px solid var(--bean-theme);
+}
 
 /* 首页侧栏卡片 */
 #aside-content .card-widget {
   border-radius: 18px;
   border: var(--border-style);
+}
+#aside-content .card-widget:hover {
+  border: 1px solid var(--bean-theme);
 }
 
 /* 文章页、归档页、普通页面 */
@@ -5900,6 +5906,11 @@ div#page,
 div#archive {
   border: var(--border-style);
   border-radius: 20px;
+}
+div#post:hover,
+div#page:hover,
+div#archive:hover {
+  border: 1px solid var(--bean-theme);
 }
 
 /* 导航栏 */
@@ -6206,6 +6217,9 @@ hr {
   opacity: 0.4;
   filter: blur(7px);
 }
+.layout #post .post-copyright:hover {
+  border: 1px solid var(--bean-theme);
+}
 .layout #post .post-copyright {
   border: var(--border-style);
   border-radius: 15px;
@@ -6225,6 +6239,7 @@ hr {
 #card-info-btn {
   border-radius: 10px;
 }
+
 #nav-right {
   flex: 1 1 auto;
   justify-content: flex-end;
