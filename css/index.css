@@ -5842,6 +5842,10 @@ blockquote.pullquote.right {
 }
 :root {
   --bean-theme: #00c4b6;
+  --trans-light: rgba(255, 255, 255, 0.88);
+  --trans-dark: rgba(25, 25, 25, 0.88);
+  --border-style: 1px solid rgb(169, 169, 169);
+  --backdrop-filter: blur(5px) saturate(150%);
 }
 
 /* 翻页按钮居中 */
@@ -5858,6 +5862,8 @@ blockquote.pullquote.right {
   font-family: "ZhuZiAWan";
   src: url("https://npm.elemecdn.com/anzhiyu-blog@2.0.4/fonts/ZhuZiAWan.woff2");
 }
+#sidebar-menus .site-page,
+.copyright,
 #content-inner,
 #site-info,
 #nav {
@@ -5874,12 +5880,6 @@ blockquote.pullquote.right {
 .site-data > a .headline,
 .site-data > a .length-num {
   color: #fff;
-}
-:root {
-  --trans-light: rgba(255, 255, 255, 0.88);
-  --trans-dark: rgba(25, 25, 25, 0.88);
-  --border-style: 1px solid rgb(169, 169, 169);
-  --backdrop-filter: blur(5px) saturate(150%);
 }
 
 /* 首页文章卡片 */
@@ -6153,7 +6153,7 @@ li.card-archive-list-item {
   border-radius: 8px;
   margin: 4px 0;
   display: flex;
-  border-style: solid;
+  border: 2px solid;
   flex-direction: column;
   align-content: space-between;
   border-color: #cdd1e0;
@@ -6321,7 +6321,7 @@ hr {
   padding: 10px 30px; /*如果文字间隔不合理可以微调修改，第二个是水平方向的padding，第一个是垂直的*/
 }
 #nav {
-  padding: 0 36px;
+  padding: 0 20px 0 10px;
 }
 #site-name {
   margin: 0 5px;
@@ -6364,6 +6364,14 @@ hr {
 }
 :root {
   --lyx-theme: #ed709b; /*我的主题色*/
+}
+.site-page span {
+  font-size: 18px;
+}
+#sidebar-menus .site-page {
+  margin: 10px;
+  border-radius: 8px;
+  border: var(--border-style);
 }
 
 .search-dialog {
