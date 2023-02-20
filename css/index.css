@@ -5862,6 +5862,8 @@ blockquote.pullquote.right {
   font-family: "ZhuZiAWan";
   src: url("https://npm.elemecdn.com/anzhiyu-blog@2.0.4/fonts/ZhuZiAWan.woff2");
 }
+.sidebar-site-data a .headline,
+.sidebar-site-data a .length-num,
 #sidebar-menus .site-page,
 .copyright,
 #content-inner,
@@ -6239,6 +6241,13 @@ hr {
 #card-info-btn {
   border-radius: 10px;
 }
+/* 外联标签 */
+#article-container a.link-card p.url {
+  max-height: 26px;
+}
+#article-container a.link-card div.right {
+  width: 100%;
+}
 
 #nav-right {
   flex: 1 1 auto;
@@ -6372,6 +6381,10 @@ hr {
   margin: 10px;
   border-radius: 8px;
   border: var(--border-style);
+}
+.sidebar-site-data a .headline,
+.sidebar-site-data a .length-num {
+  color: #000;
 }
 
 .search-dialog {
