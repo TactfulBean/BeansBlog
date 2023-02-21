@@ -6098,10 +6098,6 @@ h6::before {
 .twikoo .el-textarea__inner {
   min-height: 125px !important;
 }
-.loading-img {
-  background: url(https://pic.imgdb.cn/item/63d8d603face21e9ef7bedb5.webp) no-repeat center center;
-  background-size: cover;
-}
 /* ------归档样式------ */
 span.card-archive-list-count {
   width: auto;
@@ -6173,7 +6169,7 @@ li.card-archive-list-item {
 
 /* 分割线 */
 hr {
-  background: url(https://lsky.tactfulbean.top/i/2023/02/16/63ee20c783a39.webp) !important;
+  background: url(https://upyun.tactfulbean.top/2023/02/63f45d83c3526.webp) !important;
   border: hidden !important;
   height: 130px;
   width: 100%;
