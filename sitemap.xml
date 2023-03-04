@@ -121,36 +121,36 @@
 
   <url>
     <loc>https://tactfulbean.top/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://tactfulbean.top/tags/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2023-03-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://tactfulbean.top/tags/CMIP/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tactfulbean.top/tags/Python/</loc>
-    <lastmod>2023-03-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://tactfulbean.top/tags/%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tactfulbean.top/tags/Vue/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -158,22 +158,22 @@
 
   
   <url>
-    <loc>https://tactfulbean.top/categories/CMIP%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <loc>https://tactfulbean.top/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://tactfulbean.top/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <loc>https://tactfulbean.top/categories/CMIP%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://tactfulbean.top/categories/Vue%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
