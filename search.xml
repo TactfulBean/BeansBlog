@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>一键部署属于自己的 ChatGPT 网站</title>
+      <link href="/archives/6708c4db.html"/>
+      <url>/archives/6708c4db.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一键部署属于自己的-ChatGPT-网站"><a href="#一键部署属于自己的-ChatGPT-网站" class="headerlink" title="一键部署属于自己的 ChatGPT 网站"></a>一键部署属于自己的 ChatGPT 网站</h2><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>&emsp;&emsp;最近ChatGPT项目在Github上非常受欢迎，其中发现一款可以使用Vercel一键部署的ChatGPT网页端，项目名为ChatGPT Next Web。 仅仅需要一个Vercel账号即可，就可以不适用魔法进行ChatGPT服务。</p><div class="tag link"><a class="link-card" title="工具源仓库地址" href="https://github.com/Yidadaa/ChatGPT-Next-Web"><div class="left"><img src="https://pic.imgdb.cn/item/63a4493a08b6830163d8230c.png"/></div><div class="right"><p class="text">工具源仓库地址</p><p class="url">https://github.com/Yidadaa/ChatGPT-Next-Web</p></div></a></div><h4 id="Fork项目"><a href="#Fork项目" class="headerlink" title="Fork项目"></a>Fork项目</h4><p>&emsp;&emsp;首先我们进入项目仓库，点击右上角fork。</p><p><img src="https://upyun.tactfulbean.top/2023/04/6440d60a659f2.png" alt="Fork"></p><h2 id="Vercel部署"><a href="#Vercel部署" class="headerlink" title="Vercel部署"></a>Vercel部署</h2><h4 id="添加项目"><a href="#添加项目" class="headerlink" title="添加项目"></a>添加项目</h4><p>&emsp;&emsp;如果没有Vercel账号，进入下方网址注册登录并进入控制台页面。<br><div class="tag link"><a class="link-card" title="Vercel官网" href="https://vercel.com/"><div class="left"><img src="https://assets.vercel.com/image/upload/front/favicon/vercel/favicon.ico"/></div><div class="right"><p class="text">Vercel官网</p><p class="url">https://vercel.com/</p></div></a></div><br>&emsp;&emsp;Fork完项目，我们进入Vercel控制台。点击添加新项目。</p><p><img src="https://upyun.tactfulbean.top/2023/04/6440d6d488a41.png" alt="Add New"></p><p><img src="https://upyun.tactfulbean.top/2023/04/6440d7f4809ac.png" alt="添加项目"></p><p>&emsp;&emsp;选择要导入的ChatGPT Next Web项目仓库。</p><p><img src="https://upyun.tactfulbean.top/2023/04/6440d808e6146.png" alt="选择要导入的仓库"></p><h4 id="环境变量添加"><a href="#环境变量添加" class="headerlink" title="环境变量添加"></a>环境变量添加</h4><p>&emsp;&emsp;在部署之前进行环境变量的添加，这里需要一个ChatGPT的KEY（必选），另一个变量为网站的访问密码（可选），需要填入访问密码才能进行对话。添加完环境变量后点击Deploy。</p><p><img src="https://upyun.tactfulbean.top/2023/04/6440d8a1a51e4.png" alt="环境变量"></p><p>&emsp;&emsp;出现以下界面说明部署已经完成，接下来我们可以进行域名绑定等操作。</p><p><img src="https://upyun.tactfulbean.top/2023/04/6440daa27cf8f.png" alt="部署完成"></p><h4 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h4><p>&emsp;&emsp;默认的vercel.app域名在国内可能无法访问，所以要添加自定义域名以能够正常访问网站。</p><p><img src="https://upyun.tactfulbean.top/2023/04/6440dafdc7eb8.png" alt="域名绑定"></p><h2 id="部署完成并访问"><a href="#部署完成并访问" class="headerlink" title="部署完成并访问"></a>部署完成并访问</h2><p><img src="https://upyun.tactfulbean.top/2023/04/6440db1d47834.png" alt="网页效果"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件工具分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PDF 编辑器 FineReader15 安装</title>
       <link href="/archives/cb758d5e.html"/>
       <url>/archives/cb758d5e.html</url>
@@ -45,9 +70,9 @@
       
         <tags>
             
-            <tag> 工具分享 </tag>
-            
             <tag> Vue </tag>
+            
+            <tag> 工具分享 </tag>
             
         </tags>
       
